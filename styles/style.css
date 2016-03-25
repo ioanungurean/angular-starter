@@ -11,3 +11,10 @@ md-whiteframe {
   padding: 24px;
 }
 
+#app-title {
+  padding: 0;
+}
+
+#logo {
+  margin: auto;
+}
