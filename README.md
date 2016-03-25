@@ -1,14 +1,30 @@
-# Single Page Application - Angular Material
+### Single Page Application - Starter App
 
-Single Page Application Starter App with ui-router and 5 predefined themes: red, teal, brown, indigo.
+Single Page Application with ui-router and 4 predefined themes: red, teal, brown, indigo.
 
-####Technologies Used:
+### Usage
+Clone repository:
+```
+$ git clone https://github.com/ioanungurean/spa-angular-material.git
+```
+
+Install `bower`:
+```
+$ npm install -g bower
+```
+
+Run `bower`:
+```
+$ bower install
+```
+
+### Features:
 * AngularJS </br>
 * AngularUI Router </br>
 * AngularMaterial </br>
 * HTML5 </br>
 * CSS3 </br>
 
-Screenshot [here](http://i.imgur.com/utC7NqL.png?1).
+##### Screenshot [here](http://i.imgur.com/utC7NqL.png?1).
 
 
