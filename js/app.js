@@ -1,6 +1,6 @@
 angular.module('app', ['ui.router', 'ngMaterial'])
-.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', 
-  function ($stateProvider, $urlRouterProvider, $mdThemingProvider) {
+.config(['$stateProvider', '$urlRouterProvider', '$mdThemingProvider', '$locationProvider',
+  function ($stateProvider, $urlRouterProvider, $mdThemingProvider, $locationProvider) {
   $stateProvider
     .state('home', {
       url: '/',
@@ -36,10 +36,12 @@ angular.module('app', ['ui.router', 'ngMaterial'])
     $mdThemingProvider.theme('indigo').primaryPalette('indigo');
 
     $mdThemingProvider.alwaysWatchTheme(true);
+
+    $locationProvider.html5Mode(true);
 }])
 .run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
   $rootScope.$state = $state;
   $rootScope.$stateParams = $stateParams;
 
-  $state.transitionTo('home'); 
+  $state.transitionTo('home');
 }]);
