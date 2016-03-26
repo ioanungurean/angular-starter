@@ -1,2 +1,4 @@
 .tmp
-libs
+libs/*
+!libs/fonts/
+!libs/fonts/fonts/
